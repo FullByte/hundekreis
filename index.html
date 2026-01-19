@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Canoboros</title>
+    <link rel="icon" href="data:," />
+    <link rel="stylesheet" href="starsjs.css" />
+    <link rel="stylesheet" href="styles.css?v=3" />
+  </head>
+  <body class="app__root">
+    <canvas class="app__canvas" aria-hidden="true"></canvas>
+    <div class="app__canvasDimensions" aria-hidden="true"></div>
+    <main class="player">
+      <div class="record-wrap">
+        <img
+          id="record"
+          src="Canoboros.png"
+          alt="Canoboros Cover"
+          class="record"
+        />
+      </div>
+      <audio
+        id="audio"
+        src="Canoboros.mp3"
+        preload="auto"
+        class="audio-hidden"
+        playsinline
+        webkit-playsinline
+      ></audio>
+    </main>
+    <div class="seek-bar" aria-hidden="false">
+      <input
+        id="seek"
+        class="seek"
+        type="range"
+        min="0"
+        max="0"
+        step="0.1"
+        value="0"
+        aria-label="Position im Song"
+      />
+    </div>
+    <script src="starsjs.bundle.js?v=3"></script>
+    <script src="script.js?v=8"></script>
+  </body>
+</html>
